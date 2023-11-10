@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="posttest6.css">
+    <title>Post Test Praktikum 6</title>
+
+</head>
+<body>
+    <center><h1>PRAKTIKUM <span>PEMROGRAMAN</span> WEB</h1></center>
+    <nav>
+    <h2><b>Oktaviana Salsa<span> Nur Rahmadani</span></b></h2>
+        <ul style="list-style-type:none;">
+          <li><a href="file:///C:/Users/Salsa/OneDrive/Documents/PEMROGRAMAN%20WEB/PRAKTIKUM%205/PostTest5/gridPostTest5.html">About</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul> 
+    </nav>
+
+    <figure>
+    <center><img src="https://i.pinimg.com/564x/64/5c/f0/645cf08f7d86c438a8bd350f64af7a9f.jpg" alt="purple" width="500px" height="500px"></center>
+    <center><figcaption>Purple Dreams</figcaption></center></figure>
+    
+    <br>
+    <h3>Login</h3>
+    <form action="/action_page.php">
+        <label for="email">Email : </label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="password">Password : </label>
+        <input type="text" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <p><b>Rating Kuliah Minggu ke-4 :</b>
+        <br><br>
+        <input type="radio" name="rating" value="m" id="s">
+        <label for="m">biasa aja</label>
+
+        <input type="radio" name="rating" value="m" id="s">
+        <label for="m">seru</label>
+
+        <input type="radio" name="rating" value="m" id="s">
+        <label for="m">seru sekali</label> 
+        <br><br>
+        <button type="submit">Submit</button>
+    </p>
+    <br>
+    <h2>Percobaan JavaScript</h2>
+    <table>
+        <td>
+            <h2>Masukan Pesanan</h2>
+            <div class="pesanan">
+                <form name="formMakanan" action="proses.php" method="get" onsubmit="hitungTotal(); return false;">
+                    <label for="makanan">Makanan :
+                        <select name="makanan" id="makanan">
+                            <option value="100000">Pizza</option>
+                            <option value="30000">Hamburger</option>
+                            <option value="25000">Kebab</option>
+                            <option value="35000">Spaghetti</option>
+                            <option value="20000">Fried Chicken</option>
+                        </select>
+                    </label>
+                    <br><br>
+                    <label for="jumlah">Jumlah : </label>
+                    <input type="text" id="jumlah" name="jumlah"><br><br>
+
+                    <label for="voucher">Voucher : </label>
+                    <input type="text" id="voucher" name="voucher"><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </td>
+    </table>
+
+    <table>
+        <td>    
+            <div class="daftarPesanan">
+                <table>
+                    <tr>
+                        <th>Nama Pesanan : </th>
+                        <td id="namaPesanan"></td>
+                    </tr>
+                    <tr>
+                        <th>Jumlah Pesanan : </th>
+                        <td id="jumlahPesanan"></td>
+                    </tr>
+                    <tr>
+                        <th>Total Diskon : </th>
+                        <td id="totalDiskon"></td>
+                    </tr>
+                    <tr>
+                        <th>Total Harga : </th>
+                        <td id="totalHarga"></td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </table>
+</body>
+</html>
+
+<script>
+    function hitungTotal() {
+        //variabel
+        var makananPilihan = document.getElementById("makanan");
+        var inputJumlah = document.getElementById("jumlah");
+        var inputVoucher = document.getElementById("voucher");
+
+        var namaPesanan = makananPilihan.options[makananPilihan.selectedIndex].text;
+        var jumlahPesanan = parseInt(inputJumlah.value);
+        var hargaPerItem = parseInt(makananPilihan.value);
+        var totalHarga = jumlahPesanan * hargaPerItem;
+
+        //menghitung diskon
+        var diskon = 0;
+        if (inputVoucher.value === "ASPRAKLEONGANTENG") {
+            diskon = totalHarga * 0.2; // Diskon 20% jika voucher = "ASPRAKLEONGANTENG"
+        }
+
+        var totalDiskon = diskon;
+        totalHarga = totalHarga-diskon;
+
+        document.getElementById("namaPesanan").textContent = namaPesanan;
+        document.getElementById("jumlahPesanan").textContent = jumlahPesanan;
+        document.getElementById("totalDiskon").textContent = diskon;
+        document.getElementById("totalHarga").textContent = totalHarga;
+    }
+</script>
+   

@@ -1,0 +1,63 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(155, 124, 185);
+}
+
+ul{
+    display: flex;
+    list-style: none; 
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: right;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 177, 223);
+}
+
+span{
+    color: rgb(109, 82, 135);
+}
+
+.pesanan{
+    background-color: rgb(109, 82, 135);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+
+.daftarPesanan{
+    background-color: rgb(155, 124, 185);
+    display: flex;
+    justify-content: space-between; 
+    align-content: normal;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;  
+    margin-left: 20px;
+}

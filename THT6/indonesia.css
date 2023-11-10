@@ -1,0 +1,159 @@
+header {
+    background-color: #5B5B5B;
+    color: #EEE0C9;
+    text-align: center;
+    padding: 20px;
+    }
+
+.batas{
+    background-color: #B67171;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+  }
+  
+body {
+  font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',sans-serif;
+  background-color: #C19065;
+  margin: 0;
+  padding: 0;
+  }
+
+.global {
+    color: #D8C292; 
+    }
+.culinary{
+    color: #B67171; 
+    }
+.flavors{
+    color: #C19065; 
+    }
+
+#kuliner1 {
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "nav main"
+  "footer footer";
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.2fr 1fr auto;
+  box-sizing: border-box;
+  border: none black solid;
+  }
+  
+#kuliner1 > header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background-color: #D8C292;
+    color: #5B5B5B; 
+    text-decoration: #5B5B5B;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    height: 50px;
+    border-radius: 0px;
+  }
+
+#kuliner1 > nav {
+    grid-area: nav main;
+    background-color: #EEE0C9;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+#kuliner1 > nav > img {
+    display: flex;
+    align-items: center;
+    float: left;
+    background-color: #dca97b;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    grid-area: nav main;
+    }
+  
+#kuliner1 > main {
+    grid-area: nav main;
+    background-color: #EEE0C9;
+  }
+
+#kuliner1 > main > h4{
+    float: right;
+    background-color:#EEE0C9 ;
+    margin-right: 100px;
+  }
+  
+#kuliner1 > footer {
+    grid-area: footer;
+    background-color: #B67171;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-bottom: 0px;
+    height: 50px;
+  }
+
+#kuliner2 {
+    display: grid;
+    grid-template-areas: 
+    "nav main"
+    "footer footer";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 1fr none;
+    box-sizing: border-box;
+    border: none black solid;
+    }
+    
+#kuliner2 > nav {
+      grid-area: nav main;
+      background-color: #EEE0C9;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+#kuliner2 > nav > img {
+      display: flex;
+      align-items: center;
+      float: left;
+      background-color: #dca97b;
+      padding: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 100px;
+      grid-area: nav main;
+      }
+  
+    
+#kuliner2 > main {
+      grid-area: nav main;
+      background-color: #EEE0C9;
+      margin-top: 0px;
+    }
+  
+#kuliner2 > main > h4{
+      float: right;
+      background-color:#EEE0C9 ;
+      margin-right: 100px;
+    }
+    
+#kuliner2 > footer {
+      grid-area: footer;
+      background-color: #B67171;
+      display: flex;
+      align-items: center;
+      float: left;
+      margin-bottom: 0px;
+      height: 50px;
+    }
+
+footer {
+  grid-area: footer; 
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  }
