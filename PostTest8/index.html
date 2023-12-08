@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostTest8</title>
+</head>
+<body>
+    <h3>Form Input Nilai IP Semester</h3>
+    <form action="index.php" method="post">
+    <label for="ip_smt1">IP Semester 1 : </label>
+    <input type="text" name="ip_smt1"></br>
+
+    <div id="kolom_input"></div>
+    <br>
+    <button type="button" id="tambah_input">Tambah Input IP Semester</button>
+    <br><br>
+    <input type="submit" value="Hitung IPK">
+    </form>
+
+    <script>
+        var counter = 2;
+        document.getElementById("tambah_input").addEventListener('click', function() {
+            var newLabel = document.createElement('label');
+            newLabel.setAttribute('for', 'ip_smt'+counter);
+            newLabel.textContent = 'IP Semester ' + (counter) + ' : ';
+            
+            var newInput = document.createElement('input');
+            newInput.type = 'text';
+            newInput.name = 'ip_smt' + counter++;
+            newInput.placeholder = 'IP Semester ' + (counter-1);
+
+            document.getElementById('kolom_input').appendChild(newLabel);
+            document.getElementById('kolom_input').appendChild(newInput);
+            document.getElementById('kolom_input').appendChild(document.createElement('br'));
+        });
+    </script>
+</body>
+</html>
