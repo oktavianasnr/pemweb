@@ -1,0 +1,251 @@
+
+body {
+    font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',sans-serif;
+    background-color: #C19065;
+    margin: 0;
+    padding: 0;
+    }
+
+header {
+    background-color: #5B5B5B;
+    color: #EEE0C9;
+    text-align: center;
+    padding: 20px;
+    }
+
+.global {
+    color: #D8C292;
+    }
+.culinary{
+    color: #B67171;
+    }
+.flavors{
+    color: #C19065;
+    }
+
+h1 {
+    font-size: 36px;
+    }
+
+nav {
+    background-color: #B67171;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    }
+
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    }
+
+.gambar{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    flex: 0 0 calc(30% - 50px);
+}
+.gambar img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.gambar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0;
+}
+
+
+.description{
+    background-color: #D8C292;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    flex: 0 0 calc(45% - 40px);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D8C292;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 100px;
+}
+
+
+.food-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    flex: 0 0 calc(35% - 40px);
+    }
+
+.food-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    }
+
+.food-item h2 {
+    font-size: 24px;
+    }
+
+.food-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    }
+
+
+.layout{
+    display: grid;
+    grid-template-areas:
+        "main main"
+        "aside aside";
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 1fr none;
+    box-sizing: border-box;
+    border: none black solid;
+}
+
+.form{
+    grid-area: main main;
+    flex-direction: column;
+    align-items: left;
+    background-color: #D8C292;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px;
+    float: none;
+}
+
+.rate{
+    grid-area: aside aside;
+    flex-direction: column;
+    align-items: left;
+    background-color: #D8C292;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px;
+    float: none;
+}
+
+.comment{
+    grid-area: nav nav;
+    flex-direction: column;
+    align-items: left;
+    background-color: #B67171;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px;
+    float: none;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    }
+
+.item {
+        grid-area: Area;
+    }
+.grid-container {
+        display: grid;
+        grid-template-areas: 'Area Area Area';
+        grid-gap: 30px;
+        background-color: #EEE0C9;
+        padding: 30px;
+        margin: 30px;
+    }
+.menu {
+        background-color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',sans-serif;
+    }
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#hasilInput {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 12px;
+}
+
+#hasilRate {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 12px;
+}
+
+#hasilKomentar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-size: 12px;
+}
+
+#komentar{
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode';
+    background-color: #EEE0C9;
+}
+
+button{
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode';
+    background-color: #EEE0C9;
+}
+
+#nama{
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode';
+    background-color: #EEE0C9;
+}
+
+#namaKuliner{
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode';
+    background-color: #EEE0C9;
+}
+
+#rate{
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode';
+    background-color: #EEE0C9;
+}
